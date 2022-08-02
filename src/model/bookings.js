@@ -1,19 +1,19 @@
 const mongoose = require("mongoose");
 
-mongoose
-  .connect(
-    "mongodb+srv://testuser:temppassword@cluster0.ycvge9z.mongodb.net/?retryWrites=true&w=majority",
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    }
-  )
-  .then(() => {
-    console.log("Connected to MongoDB");
-  })
-  .catch((err) => {
-    console.log(err);
-  });
+// mongoose
+//   .connect(
+//     "mongodb+srv://testuser:temppassword@cluster0.ycvge9z.mongodb.net/?retryWrites=true&w=majority",
+//     {
+//       useNewUrlParser: true,
+//       useUnifiedTopology: true,
+//     }
+//   )
+//   .then(() => {
+//     console.log("Connected to MongoDB");
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
 
 async function run() {
   // Create a new connection and connect to MongoDB...
@@ -24,7 +24,7 @@ async function run() {
       useUnifiedTopology: true,
     }
   );
-
+console.log('connected to mongoo DB');
   // But register a model on Mongoose's default connection
 }
 
